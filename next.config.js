@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
+  output: 'export',
+
+  basePath: '/Ashur-port',
+  assetPrefix: '/Ashur-port/',
+
   images: {
-    // Use remotePatterns instead of deprecated `domains` to whitelist external image sources
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -20,4 +26,5 @@ const nextConfig = {
   },
 }
 
+module.exports = nextConfig
 module.exports = nextConfig
