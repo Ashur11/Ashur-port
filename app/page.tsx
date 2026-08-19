@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
@@ -10,7 +11,7 @@ export default function Home() {
       <header className="max-w-5xl mx-auto px-6 py-16 flex items-center gap-8">
         <div className="flex-1">
           <motion.h1 initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{delay:0.05}} className="text-4xl font-bold">Ashur — Photography & Apps</motion.h1>
-          <motion.p initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{delay:0.12}} className="text-slate-300 mt-4 max-w-xl">A small selection of photography and projects. Smooth transitions, responsive images, and a lightweight codebase — ready to deploy to Vercel.</motion.p>
+          <motion.p initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{delay:0.12}} className="text-slate-300 mt-4 max-w-xl">A small selection of photography and projects. Smooth tra[...]</motion.p>
           <motion.div initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{delay:0.18}} className="mt-6">
             <Link href="#gallery" className="inline-block bg-violet-600 text-white px-4 py-2 rounded-lg shadow">View work</Link>
           </motion.div>
